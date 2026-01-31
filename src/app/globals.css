@@ -1,0 +1,119 @@
+@import "tailwindcss";
+
+:root {
+  /* Background colors */
+  --background: #F2F3F0;
+  --card: #FFFFFF;
+  --sidebar: #E7E8E5;
+  --sidebar-accent: #CBCCC9;
+
+  /* Text colors */
+  --foreground: #111111;
+  --muted-foreground: #666666;
+  --sidebar-foreground: #666666;
+  --sidebar-accent-foreground: #18181b;
+
+  /* Border colors */
+  --border: #CBCCC9;
+  --sidebar-border: #CBCCC9;
+
+  /* Primary/Accent */
+  --primary: #FF8400;
+  --primary-foreground: #111111;
+
+  /* Semantic colors */
+  --success: #4CAF50;
+  --success-foreground: #004D1A;
+  --info: #2196F3;
+  --warning: #FFC107;
+
+  /* Card accents */
+  --solar-bg: #FFF3E0;
+  --battery-bg: #E8F5E9;
+  --home-bg: #E3F2FD;
+  --grid-bg: #FFF8E1;
+
+  /* Chart colors */
+  --chart-low: #FFE0B2;
+  --chart-medium: #FFB74D;
+  --chart-high: #FF9800;
+  --chart-peak: #FF8400;
+
+  /* Border radius */
+  --radius-sm: 4px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-full: 9999px;
+}
+
+/* Dark mode variables */
+html.dark {
+  /* Background colors */
+  --background: #0a0a0a;
+  --card: #171717;
+  --sidebar: #0f0f0f;
+  --sidebar-accent: #262626;
+
+  /* Text colors */
+  --foreground: #fafafa;
+  --muted-foreground: #a1a1aa;
+  --sidebar-foreground: #a1a1aa;
+  --sidebar-accent-foreground: #fafafa;
+
+  /* Border colors */
+  --border: #262626;
+  --sidebar-border: #262626;
+
+  /* Primary/Accent - keep vibrant in dark mode */
+  --primary: #FF9500;
+  --primary-foreground: #0a0a0a;
+
+  /* Semantic colors - brighter for dark mode */
+  --success: #22c55e;
+  --success-foreground: #86efac;
+  --info: #3b82f6;
+  --warning: #f59e0b;
+
+  /* Card accents - darker versions */
+  --solar-bg: #422006;
+  --battery-bg: #14532d;
+  --home-bg: #1e3a5f;
+  --grid-bg: #422006;
+
+  /* Chart colors - slightly muted for dark */
+  --chart-low: #7c2d12;
+  --chart-medium: #c2410c;
+  --chart-high: #ea580c;
+  --chart-peak: #f97316;
+}
+
+@layer base {
+  html, body {
+    height: 100%;
+  }
+
+  .font-primary {
+    font-family: "JetBrains Mono", monospace;
+  }
+
+  .font-secondary {
+    font-family: "Geist", sans-serif;
+  }
+
+  /* Material Symbols icon font */
+  .material-symbols {
+    font-family: "Material Symbols Rounded";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    font-feature-settings: "liga";
+    -webkit-font-smoothing: antialiased;
+  }
+}
